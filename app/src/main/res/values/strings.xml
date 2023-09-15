@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StudyComposeApp</string>
+
+    <string name="navigation_item_home">Home</string>
+    <string name="navigation_item_widgets">Widgets</string>
+    <string name="navigation_item_animation">Anim</string>
+    <string name="navigation_item_demoui">DemoUI</string>
+    <string name="navigation_item_profile">Template</string>
+
+    <string name="test_adbanner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="test_admob_id">ca-app-pub-5207778306358129~3940384518</string>
+</resources>
