@@ -1,8 +1,6 @@
 package com.xk.study.studycomposeapp.ui.page
 
 import androidx.compose.animation.ExperimentalAnimationApi
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -38,7 +36,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
@@ -57,13 +54,9 @@ private const val defaultScreen = false
 @Composable
 fun HomePage() {
     val isWiderScreen = rememberSaveable { mutableStateOf(defaultScreen) }
-    val isMenuOpen = rememberSaveable { mutableStateOf(true) }
+    val isMenuOpen = rememberSaveable { mutableStateOf(false) }
     Surface {
-        Column(
-            modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.Top,
-            horizontalAlignment = Alignment.End,
-        ) {
+        Column(modifier = Modifier.fillMaxSize()) {
             TopAppBar(title = { Text(text = "HomePage") },
                 actions = {
                     IconButton(onClick = { isWiderScreen.value = !isWiderScreen.value }) { Icon(Icons.Filled.Bolt, contentDescription = null) }
